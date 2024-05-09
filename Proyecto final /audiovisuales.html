@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Bruna.svg" type="image/x-icon">
+    <title>Bruna, la cocker</title>
+    <style>
+        body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: linear-gradient(to right,  rgb(137, 128, 128), rgb(255, 255, 255));
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #88898b;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #88898b;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 20vw;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+
+}
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+    </style>
+</head>
+<body>
+     
+    <header>
+        <h1>BRUNA</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preferencias.html">Preferencias</a></li>
+            <li><a  class="active" href="audiovisuales.html">Audiovisuales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="centrado">
+            <video  class="centrado" src="/assets/videos/brunaDestrozos.mp4" autoplay muted></video>
+        </div>
+
+        <section class="centrado">
+            <div class="gallery">
+                <a href="/assets/img/brunaPaseando.jpeg" target="_blank"><img src="/assets/img/brunaPaseando.jpeg" alt=""></a>
+                <div class="desc">Bruna 1</div>
+            </div >
+            <div class="gallery">
+                <a href="/assets/img/Bruna Lentes.jpeg" target="_blank"><img src="/assets/img/Bruna Lentes.jpeg" alt=""></a>
+                
+                <div class="desc">Bruna 2</div><br>
+                <div style="text-align: center; margin: 8cap;">Galeria de Bruna</div>
+            </div>
+            <div class="gallery">
+                <a href="/assets/img/brunaEsperadoComida.jpeg" target="_blank"><img src="/assets/img/brunaEsperadoComida.jpeg" alt=""></a>
+                
+                <div class="desc">Bruna 3</div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
